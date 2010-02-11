@@ -18,35 +18,15 @@
 # Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 #
 
-require 'ronin/ui/command_line/command'
-require 'ronin/ui/command_line/command_line'
+require 'open_namespace'
 
 module Ronin
   module UI
     module CommandLine
       module Commands
-        class Help < Command
+        include OpenNamespace
 
-          desc 'Displays the list of available commands or prints information on a specific command'
-          argument :command, :type => :string, :required => false
-
-          def execute
-            if self.command
-              begin
-                CommandLine.command(self.command).start(['--help'])
-              rescue UnknownCommand
-                print_error "unknown command #{command.dump}"
-              end
-            else
-              puts 'Available commands:'
-
-              indent do
-                CommandLine.commands.each { |name| puts name }
-              end
-            end
-          end
-
-        end
+        self.namespace_root = File.join('ronin','ui','command_line','commands')
       end
     end
   end
