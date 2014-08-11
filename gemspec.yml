@@ -9,6 +9,12 @@ has_yard: true
 
 dependencies:
   virtus: ~> 1.0
+  ripl: ~> 0.3
+  ripl-multi_line: ~> 0.2
+  ripl-auto_indent: ~> 0.1
+  ripl-short_errors: ~> 0.1
+  ripl-color_result: ~> 0.3
+  ripl-shell_commands: ~> 0.1
 
 development_dependencies:
   bundler: ~> 1.0
