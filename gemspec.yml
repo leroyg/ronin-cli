@@ -1,0 +1,15 @@
+name: ronin-cli
+summary: CLI library for Ronin.
+description: ronin-cli provides the Command-Line Interface for Ronin.
+license: GPL-3
+authors: Postmodern
+email: postmodern.mod3@gmail.com
+homepage: http://ronin-ruby.github.io/
+has_yard: true
+
+dependencies:
+  virtus: ~> 1.0
+
+development_dependencies:
+  bundler: ~> 1.0
+  yard: ~> 0.8
