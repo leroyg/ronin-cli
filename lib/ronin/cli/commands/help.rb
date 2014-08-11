@@ -17,8 +17,8 @@
 # along with Ronin.  If not, see <http://www.gnu.org/licenses/>.
 #
 
-require 'ronin/ui/cli/command'
-require 'ronin/ui/cli/cli'
+require 'ronin/cli/command'
+require 'ronin/cli/cli'
 require 'ronin/installation'
 
 module Ronin

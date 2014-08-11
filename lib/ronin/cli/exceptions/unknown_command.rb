@@ -17,5 +17,9 @@
 # along with Ronin.  If not, see <http://www.gnu.org/licenses/>.
 #
 
-require 'ronin/ui/cli/command'
-require 'ronin/ui/cli/cli'
+module Ronin
+  module CLI
+    class UnknownCommand < StandardError
+    end
+  end
+end

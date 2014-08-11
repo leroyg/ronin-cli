@@ -1,14 +1,14 @@
 require 'spec_helper'
-require 'ronin/ui/cli/command'
+require 'ronin/cli/command'
 
-require 'ui/cli/classes/test_command'
-require 'ui/cli/classes/namespace/test_command'
+require 'cli/classes/test_command'
+require 'cli/classes/namespace/test_command'
 
-describe UI::CLI::Command do
-  subject { UI::CLI::Commands::TestCommand }
+describe CLI::Command do
+  subject { CLI::Commands::TestCommand }
 
   describe "command_name" do
-    it "should omit the 'Ronin::UI::CLI::Commands' namespace" do
+    it "should omit the 'Ronin::CLI::Commands' namespace" do
       subject.command_name.should_not include('ronin:ui:cli:commands')
     end
 
@@ -17,7 +17,7 @@ describe UI::CLI::Command do
     end
 
     context "with namespaces" do
-      subject { UI::CLI::Commands::Namespace::TestCommand }
+      subject { CLI::Commands::Namespace::TestCommand }
 
       it "should replace '::' with ':'" do
         subject.command_name.should == 'namespace:test_command'
@@ -50,7 +50,7 @@ describe UI::CLI::Command do
     end
 
     context "inherited" do
-      let(:superclass) { UI::CLI::Commands::TestCommand }
+      let(:superclass) { CLI::Commands::TestCommand }
 
       subject { Class.new(superclass).usage }
 
@@ -85,7 +85,7 @@ describe UI::CLI::Command do
     end
 
     context "inherited" do
-      let(:superclass) { UI::CLI::Commands::TestCommand }
+      let(:superclass) { CLI::Commands::TestCommand }
 
       subject { Class.new(superclass).summary }
 
@@ -122,7 +122,7 @@ describe UI::CLI::Command do
     end
 
     context "inherited" do
-      let(:superclass) { UI::CLI::Commands::TestCommand }
+      let(:superclass) { CLI::Commands::TestCommand }
 
       subject { Class.new(superclass).examples }
 
@@ -243,7 +243,7 @@ describe UI::CLI::Command do
   end
 
   describe "#start" do
-    subject { UI::CLI::Commands::TestCommand.new }
+    subject { CLI::Commands::TestCommand.new }
 
     it "should parse options" do
       value = 'baz'

@@ -17,4 +17,4 @@
 # along with Ronin.  If not, see <http://www.gnu.org/licenses/>.
 #
 
-require 'ronin/ui/cli/exceptions/unknown_command'
+require 'ronin/cli/exceptions/unknown_command'

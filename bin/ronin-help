@@ -15,6 +15,6 @@ if File.directory?(File.join(root,'.git'))
   end
 end
 
-require 'ronin/ui/cli/commands/help'
+require 'ronin/cli/commands/help'
 
-Ronin::UI::CLI::Commands::Help.start
+Ronin::CLI::Commands::Help.start
