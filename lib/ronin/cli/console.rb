@@ -17,5 +17,5 @@
 # along with Ronin.  If not, see <http://www.gnu.org/licenses/>.
 #
 
-require 'ronin/ui/console/console'
-require 'ronin/ui/console/commands'
+require 'ronin/cli/console/console'
+require 'ronin/cli/console/commands'

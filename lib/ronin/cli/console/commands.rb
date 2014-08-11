@@ -21,7 +21,7 @@ require 'shellwords'
 require 'tempfile'
 
 module Ronin
-  module UI
+  module CLI
     module Console
       #
       # Allows for calling {Console} commands via the `.` prefix.
@@ -83,4 +83,4 @@ module Ronin
   end
 end
 
-Ripl::Shell.send :include, Ronin::UI::Console::Commands
+Ripl::Shell.send :include, Ronin::CLI::Console::Commands

@@ -18,7 +18,7 @@
 #
 
 module Ronin
-  module UI
+  module CLI
     module Console
       #
       # @since 1.2.0
@@ -96,7 +96,7 @@ module Ronin
               end
             end
 
-            return "#<Ronin::UI::Console#{body}>"
+            return "#<Ronin::CLI::Console#{body}>"
           end
         end
 

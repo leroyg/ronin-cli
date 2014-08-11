@@ -17,7 +17,7 @@
 # along with Ronin.  If not, see <http://www.gnu.org/licenses/>.
 #
 
-require 'ronin/ui/console/context'
+require 'ronin/cli/console/context'
 require 'ronin/config'
 require 'ronin/repository'
 
@@ -27,7 +27,7 @@ require 'ripl/auto_indent'
 require 'ripl/shell_commands'
 
 module Ronin
-  module UI
+  module CLI
     #
     # An interactive Ruby {Console} using
     # [Ripl](https://github.com/cldwalker/ripl).
