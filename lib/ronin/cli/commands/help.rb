@@ -22,51 +22,49 @@ require 'ronin/cli/cli'
 require 'ronin/installation'
 
 module Ronin
-  module UI
-    module CLI
-      module Commands
-        #
-        # Displays the list of available commands or prints information on a
-        # specific command.
-        #
-        # ## Usage
-        #
-        #     ronin help [options] COMMAND
-        #
-        # ## Options
-        #
-        #      -v, --[no-]verbose               Enable verbose output.
-        #      -q, --[no-]quiet                 Disable verbose output.
-        #          --[no-]silent                Silence all output.
-        #
-        # ## Arguments
-        #
-        #      COMMAND                          The command to display
-        #
-        class Help < Command
+  module CLI
+    module Commands
+      #
+      # Displays the list of available commands or prints information on a
+      # specific command.
+      #
+      # ## Usage
+      #
+      #     ronin help [options] COMMAND
+      #
+      # ## Options
+      #
+      #      -v, --[no-]verbose               Enable verbose output.
+      #      -q, --[no-]quiet                 Disable verbose output.
+      #          --[no-]silent                Silence all output.
+      #
+      # ## Arguments
+      #
+      #      COMMAND                          The command to display
+      #
+      class Help < Command
 
-          summary 'Displays the list of available commands or prints information on a specific command'
+        summary 'Displays the list of available commands or prints information on a specific command'
 
-          argument :command, type:        String,
-                             description: 'The command to display'
+        argument :command, type:        String,
+          description: 'The command to display'
 
-          #
-          # Lists the available commands.
-          #
-          def execute
-            if command?
-              begin
-                CLI.command(command).help
-              rescue UnknownCommand
-                print_error "Unknown command: #{@command.dump}"
-                exit -1
-              end
-            else
-              print_array CLI.commands, title: 'Available commands'
+        #
+        # Lists the available commands.
+        #
+        def execute
+          if command?
+            begin
+              CLI.command(command).help
+            rescue UnknownCommand
+              print_error "Unknown command: #{@command.dump}"
+              exit -1
             end
+          else
+            print_array CLI.commands, title: 'Available commands'
           end
-
         end
+
       end
     end
   end

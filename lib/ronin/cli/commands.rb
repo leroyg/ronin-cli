@@ -20,17 +20,15 @@
 require 'open_namespace'
 
 module Ronin
-  module UI
-    module CLI
-      #
-      # The {Commands} namespace contains all of the {Command} classes
-      # available to {CLI}.
-      #
-      module Commands
-        include OpenNamespace
+  module CLI
+    #
+    # The {Commands} namespace contains all of the {Command} classes
+    # available to {CLI}.
+    #
+    module Commands
+      include OpenNamespace
 
-        self.namespace_root = File.join('ronin','ui','cli','commands')
-      end
+      self.namespace_root = File.join('ronin','cli','commands')
     end
   end
 end
