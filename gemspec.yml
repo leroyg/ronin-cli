@@ -9,7 +9,7 @@ has_yard: true
 
 dependencies:
   open_namespace: ~> 0.4
-  virtus: ~> 1.0
+  parameters: ~> 0.4
   ripl: ~> 0.3
   ripl-multi_line: ~> 0.2
   ripl-auto_indent: ~> 0.1

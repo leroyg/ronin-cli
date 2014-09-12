@@ -33,7 +33,7 @@ View the man page for a subcommand:
 
 ## Requirements
 
-* [virtus] ~> 1.0
+* [parameters] ~> 0.4
 * [ripl] ~> 0.3
 * [ripl-multi_line] ~> 0.2
 * [ripl-auto_indent] ~> 0.1
@@ -62,7 +62,7 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with Ronin CLI.  If not, see <http://www.gnu.org/licenses/>.
 
-[virtus]: https://github.com/solnic/virtus#readme
+[parameters]: https://github.com/postmodern/parameters#readme
 [ripl]: https://github.com/cldwalker/ripl#readme
 [ripl-multi_line]: https://github.com/janlelis/ripl-multi_line#readme
 [ripl-auto_indent]: https://github.com/janlelis/ripl-auto_indent#readme
