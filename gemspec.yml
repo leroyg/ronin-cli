@@ -8,6 +8,7 @@ homepage: http://ronin-ruby.github.io/
 has_yard: true
 
 dependencies:
+  open_namespace: ~> 0.4
   virtus: ~> 1.0
   ripl: ~> 0.3
   ripl-multi_line: ~> 0.2
