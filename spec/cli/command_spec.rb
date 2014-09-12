@@ -186,7 +186,7 @@ describe CLI::Command do
 
   describe "options?" do
     it "should test if there are any defined options" do
-      subject.options?.should be_true
+      subject.options?.should == true
     end
   end
 
@@ -227,7 +227,7 @@ describe CLI::Command do
 
   describe "arguments?" do
     it "should test if there are any defined arguments" do
-      subject.arguments?.should be_true
+      subject.arguments?.should == true
     end
   end
 
