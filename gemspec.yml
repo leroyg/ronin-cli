@@ -16,6 +16,8 @@ dependencies:
   ripl-short_errors: ~> 0.1
   ripl-color_result: ~> 0.3
   ripl-shell_commands: ~> 0.1
+  # Ronin dependencies:
+  ronin-support: ~> 0.6
 
 development_dependencies:
   bundler: ~> 1.0

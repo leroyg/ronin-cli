@@ -40,6 +40,7 @@ View the man page for a subcommand:
 * [ripl-short_errors] ~> 0.1
 * [ripl-color_result] ~> 0.3
 * [ripl-shell_commands] ~> 0.1
+* [ronin-support] ~> 0.6
 
 ## Install
 
@@ -69,3 +70,4 @@ along with Ronin CLI.  If not, see <http://www.gnu.org/licenses/>.
 [ripl-short_errors]: https://rubygems.org/gems/ripl-short_errors
 [ripl-color_result]: https://github.com/janlelis/ripl-color_result#readme
 [ripl-shell_commands]: https://github.com/postmodern/ripl-shell_commands#readme
+[ronin-support]: https://github.com/ronin-ruby/ronin-support#readme
